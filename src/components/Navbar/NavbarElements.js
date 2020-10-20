@@ -6,7 +6,7 @@ import { theme } from '../../theme'
 export const Nav = styled.nav`
   background-color: ${theme.primaryMenu};
   height: 80px;
-  /* margin-top: -80px; */
+  margin-top: -80px;
   display: flex;
   justify-content: center;
   align-items: center;
