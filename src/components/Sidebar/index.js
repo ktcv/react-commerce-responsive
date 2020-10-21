@@ -11,6 +11,13 @@ import {
 } from './SidebarElements'
 
 const Sidebar = ({ isOpen, toggleOpen }) => {
+  const navLinkProps = {
+    smooth: 'true',
+    duration: 500,
+    spy: true,
+    exact: 'true',
+    offset: -80,
+  }
   return (
     <>
       <SidebarContainer isOpen={isOpen} onClick={toggleOpen}>
@@ -19,21 +26,21 @@ const Sidebar = ({ isOpen, toggleOpen }) => {
         </Icon>
         <SidebarWrapper>
           <SidebarMenu>
-            <SidebarLink to='discover' onClick={toggleOpen}>
+            <SidebarLink to='discover' onClick={toggleOpen} {...navLinkProps}>
               Discover
             </SidebarLink>
-            <SidebarLink to='courses' onClick={toggleOpen}>
+            <SidebarLink to='courses' onClick={toggleOpen} {...navLinkProps}>
               Courses
             </SidebarLink>
-            <SidebarLink to='services' onClick={toggleOpen}>
+            <SidebarLink to='services' onClick={toggleOpen} {...navLinkProps}>
               Languages
             </SidebarLink>
-            <SidebarLink to='about' onClick={toggleOpen}>
+            <SidebarLink to='about' onClick={toggleOpen} {...navLinkProps}>
               About
             </SidebarLink>
-            <SidebarLink to='signup' onClick={toggleOpen}>
+            {/* <SidebarLink to='signup' onClick={toggleOpen}>
               Sign up
-            </SidebarLink>
+            </SidebarLink> */}
           </SidebarMenu>
           <SideBtnWrap>
             <SidebarRoute to='/signin'>Sign in</SidebarRoute>

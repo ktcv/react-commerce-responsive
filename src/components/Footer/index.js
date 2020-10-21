@@ -24,6 +24,8 @@ import {
 } from './FooterElements'
 import { theme } from '../../theme'
 
+import { animateScroll } from 'react-scroll'
+
 const Footer = () => {
   return (
     <>
@@ -69,7 +71,9 @@ const Footer = () => {
 
             <SocialMedia>
               <SocialMediaWrap>
-                <SocialLogo to='/'>smooth</SocialLogo>
+                <SocialLogo to='/' onClick={() => animateScroll.scrollToTop()}>
+                  smooth
+                </SocialLogo>
                 <SocialIcons>
                   <SocialIconLink href='#' aria-label='Facebook'>
                     <FaFacebook />

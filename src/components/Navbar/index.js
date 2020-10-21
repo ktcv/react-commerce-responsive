@@ -14,11 +14,13 @@ import {
   NavBtnLink,
 } from './NavbarElements'
 
+import { animateScroll } from 'react-scroll'
+
 const Navbar = ({ toggleOpen }) => {
   const [scrollNav, setScrollNav] = useState(false)
 
   const changeNav = () => {
-    if (window.scrollY >= 960) {
+    if (window.scrollY >= 920) {
       setScrollNav(true)
     } else {
       setScrollNav(false)
@@ -29,31 +31,53 @@ const Navbar = ({ toggleOpen }) => {
     window.addEventListener('scroll', changeNav)
   }, [])
 
+  const scrollToTop = () => animateScroll.scrollToTop()
+
+  const navLinkProps = {
+    smooth: 'true',
+    duration: 500,
+    spy: true,
+    exact: 'true',
+    offset: -80,
+  }
+
   return (
     <>
       <IconContext.Provider value={{ color: theme.primaryBackground }}>
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
-            <NavLogo to='/'>smooth</NavLogo>
+            <NavLogo to='/' onClick={scrollToTop}>
+              smooth
+            </NavLogo>
             <MobileIcon onClick={toggleOpen}>
               <FaBars />
             </MobileIcon>
             <NavMenu>
               <NavItem>
-                <NavLinks to='discover'>Discover</NavLinks>
+                <NavLinks to='discover' {...navLinkProps}>
+                  Discover
+                </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to='courses'>Courses</NavLinks>
+                <NavLinks to='courses' {...navLinkProps}>
+                  Courses
+                </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to='services'>Languages</NavLinks>
+                <NavLinks to='services' {...navLinkProps}>
+                  Languages
+                </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to='about'>About</NavLinks>
+                <NavLinks to='about' {...navLinkProps}>
+                  About
+                </NavLinks>
               </NavItem>
-              <NavItem>
-                <NavLinks to='signup'>Sign up</NavLinks>
-              </NavItem>
+              {/* <NavItem>
+                <NavLinks  to='signup' {...navLinkProps}>
+                  Sign up
+                </NavLinks>
+              </NavItem> */}
             </NavMenu>
             <NavBtn>
               <NavBtnLink to='/signin'>Sign in</NavBtnLink>
