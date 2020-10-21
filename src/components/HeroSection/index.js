@@ -7,7 +7,6 @@ import {
   HeroH1,
   HeroP,
   HeroBtnWrapper,
-  ArrowForward,
   ArrowRight,
 } from './HeroElements'
 import { Button } from '../ButtonElement'
@@ -37,7 +36,7 @@ const HeroSection = () => {
               primary='true'
               dark='true'
             >
-              Get started {hover ? <ArrowForward /> : <ArrowRight />}
+              Get started <ArrowRight />
             </Button>
           </HeroBtnWrapper>
         </HeroContent>

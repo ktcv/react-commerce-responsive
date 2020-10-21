@@ -20,6 +20,7 @@ export const Button = styled(Link)`
   transition: all 0.2s ease-in-out;
 
   &:hover {
+    transform: scale(1.02);
     transition: all 0.2s ease-in-out;
     background-color: ${({ primary }) =>
       primary ? theme.primaryBackground : theme.accent};
