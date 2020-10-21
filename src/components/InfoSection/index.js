@@ -29,8 +29,14 @@ const InfoSection = ({
   alt,
   primary,
   dark,
-  dark2,
 }) => {
+  const navLinkProps = {
+    smooth: 'true',
+    duration: 500,
+    spy: true,
+    exact: 'true',
+    offset: -80,
+  }
   return (
     <>
       <InfoContainer lightBg={lightBg} id={id}>
@@ -46,12 +52,7 @@ const InfoSection = ({
                     to='home'
                     primary={primary ? 1 : 0}
                     dark={dark ? 1 : 0}
-                    // dark2={dark2 ? 1 : 0}
-                    smooth={true}
-                    duration={500}
-                    spy={true}
-                    exact='true'
-                    offset={-80}
+                    {...navLinkProps}
                   >
                     {buttonLabel}
                   </Button>

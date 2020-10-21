@@ -20,9 +20,17 @@ const HeroSection = () => {
     setHover(!hover)
   }
 
+  const navLinkProps = {
+    smooth: 'true',
+    duration: 500,
+    spy: true,
+    exact: 'true',
+    offset: -80,
+  }
+
   return (
     <>
-      <HeroContainer>
+      <HeroContainer id='home'>
         <HeroBg>
           <VideoBg src={Video} autoPlay loop muted type='video/mp4' />
         </HeroBg>
@@ -32,11 +40,12 @@ const HeroSection = () => {
           <HeroP>Sign up now for a 30 day free trial.</HeroP>
           <HeroBtnWrapper>
             <Button
-              to='singup'
+              to='services'
               onMouseEnter={onHover}
               onMouseLeave={onHover}
               primary='true'
               dark='true'
+              {...navLinkProps}
             >
               Get started <ArrowRight />
             </Button>
