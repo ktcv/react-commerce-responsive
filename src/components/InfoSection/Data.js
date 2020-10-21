@@ -25,9 +25,9 @@ export const homeObjectTwo = {
     "From building websites to analyzing data, the choice is yours. Not sure where to start? We'll point you in the right direction.",
   buttonLabel: 'Get started',
   imgStart: false,
-  src: require('../../images/svg-2.svg'),
+  src: require('../../images/svg-7.svg'),
   alt: 'img',
-  dark: false,
+  dark: true,
   primary: true,
   darkTextDesc: false,
 }
