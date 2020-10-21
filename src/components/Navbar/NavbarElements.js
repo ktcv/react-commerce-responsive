@@ -4,7 +4,8 @@ import { Link as LinkS } from 'react-scroll'
 import { theme } from '../../theme'
 
 export const Nav = styled.nav`
-  background-color: ${theme.primaryMenu};
+  background-color: ${({ scrollNav }) =>
+    scrollNav ? theme.primaryMenu : 'transparent'};
   height: 80px;
   margin-top: -80px;
   display: flex;
