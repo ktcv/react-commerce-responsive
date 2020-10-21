@@ -5,6 +5,7 @@ import {
   VideoBg,
   HeroContent,
   HeroH1,
+  HeroH2,
   HeroP,
   HeroBtnWrapper,
   ArrowRight,
@@ -26,7 +27,8 @@ const HeroSection = () => {
           <VideoBg src={Video} autoPlay loop muted type='video/mp4' />
         </HeroBg>
         <HeroContent>
-          <HeroH1>Programming Made Easy</HeroH1>
+          <HeroH1>Software Development,</HeroH1>
+          <HeroH2>Simplified.</HeroH2>
           <HeroP>Sign up now for a 30 day free trial.</HeroP>
           <HeroBtnWrapper>
             <Button

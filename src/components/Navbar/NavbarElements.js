@@ -23,7 +23,7 @@ export const Nav = styled.nav`
 
 export const NavbarContainer = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   height: 80px;
   z-index: 1;
   width: 100%;
@@ -39,6 +39,7 @@ export const NavLogo = styled(LinkR)`
   display: flex;
   align-items: center;
   margin-left: 24px;
+  margin-right: auto;
   font-weight: bold;
   text-decoration: none;
 `
@@ -98,6 +99,7 @@ export const NavBtn = styled.nav`
 `
 
 export const NavBtnLink = styled(LinkR)`
+  margin-left: 30px;
   border-radius: 50px;
   background-color: ${theme.accent};
   white-space: nowrap;
