@@ -29,7 +29,7 @@ const Navbar = ({ isOpen, toggleOpen }) => {
               <NavLinks to='discover'>Discover</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to='services'>Services</NavLinks>
+              <NavLinks to='courses'>Courses</NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks to='signup'>Sign up</NavLinks>
