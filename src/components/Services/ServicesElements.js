@@ -7,7 +7,7 @@ export const ServicesContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: lightsteelblue;
+  background-color: ${theme.secondaryAccent};
 `
 
 export const ServicesWrapper = styled.div`
@@ -59,7 +59,7 @@ export const ServicesIcon = styled.img`
 
 export const ServicesH1 = styled.h1`
   font-size: 2.5rem;
-  color: ${theme.primaryBackground};
+  color: ${theme.primaryMenu};
   margin: 64px 0;
   @media screen and (max-width: 480px) {
     font-size: 2rem;

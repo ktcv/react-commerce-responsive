@@ -1,5 +1,5 @@
 export const homeObjectOne = {
-  id: 'about',
+  id: 'discover',
   lightBg: true,
   lightText: false,
   topLine: 'Dozens of languages',
@@ -16,7 +16,7 @@ export const homeObjectOne = {
 }
 
 export const homeObjectTwo = {
-  id: 'discover',
+  id: 'courses',
   lightBg: false,
   lightText: true,
   topLine: 'Dozens of languages',
@@ -33,7 +33,7 @@ export const homeObjectTwo = {
 }
 
 export const homeObjectThree = {
-  id: 'courses',
+  id: 'about',
   lightBg: true,
   lightText: false,
   topLine: 'Dozens of languages',

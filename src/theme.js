@@ -6,5 +6,6 @@ export const theme = {
   secondaryBackground: '#0c0c0c',
   tertiaryBackground: '#DDD',
   accent: '#01bf71',
+  secondaryAccent: 'lightsteelblue',
   videoBackground: '#232a34',
 }

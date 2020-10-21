@@ -8,15 +8,15 @@ import {
   ServicesCard,
   ServicesIcon,
 } from './ServicesElements'
-import Icon1 from '../../images/svg-7.svg'
-import Icon2 from '../../images/svg-5.svg'
+import Icon1 from '../../images/svg-5.svg'
+import Icon2 from '../../images/svg-7.svg'
 import Icon3 from '../../images/svg-6.svg'
 
 const Services = () => {
   return (
     <>
-      <ServicesContainer id='courses'>
-        <ServicesH1>Our Courses</ServicesH1>
+      <ServicesContainer id='services'>
+        <ServicesH1>Languages</ServicesH1>
         <ServicesWrapper>
           <ServicesCard>
             <ServicesIcon src={Icon1} />

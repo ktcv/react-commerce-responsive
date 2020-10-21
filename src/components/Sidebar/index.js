@@ -19,14 +19,17 @@ const Sidebar = ({ isOpen, toggleOpen }) => {
         </Icon>
         <SidebarWrapper>
           <SidebarMenu>
-            <SidebarLink to='about' onClick={toggleOpen}>
-              About
-            </SidebarLink>
             <SidebarLink to='discover' onClick={toggleOpen}>
               Discover
             </SidebarLink>
             <SidebarLink to='courses' onClick={toggleOpen}>
               Courses
+            </SidebarLink>
+            <SidebarLink to='services' onClick={toggleOpen}>
+              Languages
+            </SidebarLink>
+            <SidebarLink to='about' onClick={toggleOpen}>
+              About
             </SidebarLink>
             <SidebarLink to='signup' onClick={toggleOpen}>
               Sign up
