@@ -1,15 +1,15 @@
 import React from 'react'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Home from './pages'
-import SigninPage from './pages/signin'
+// import SigninPage from './pages/signin'
 
 const App = () => {
   return (
     <Router>
-      <Switch>
-        <Route path='/' component={Home} exact />
-        <Route path='/signin' component={SigninPage} exact />
-      </Switch>
+      {/* <Switch> */}
+      <Route path='/' component={Home} />
+      {/* <Route path='/signin' component={SigninPage} exact /> */}
+      {/* </Switch> */}
     </Router>
   )
 }

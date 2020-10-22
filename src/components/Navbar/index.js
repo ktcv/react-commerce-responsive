@@ -80,7 +80,7 @@ const Navbar = ({ toggleOpen }) => {
               </NavItem> */}
             </NavMenu>
             <NavBtn>
-              <NavBtnLink to='/signin'>Sign in</NavBtnLink>
+              <NavBtnLink to='/'>Sign in</NavBtnLink>
             </NavBtn>
           </NavbarContainer>
         </Nav>
