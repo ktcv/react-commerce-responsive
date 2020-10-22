@@ -3,24 +3,29 @@ import { theme } from '../../theme'
 
 export const InfoContainer = styled.div`
   color: ${theme.primaryBackground};
+  padding: 0 80px;
   background: ${({ lightBg }) =>
     lightBg ? theme.tertiaryBackground : theme.secondaryMenu};
 
   @media screen and (max-width: 768px) {
-    padding: 100px;
+    padding: 34px 22px;
   }
 `
 
 export const InfoWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 680px;
+  height: auto;
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
-  padding: 0 24px;
+  padding: 120px 24px;
   justify-content: center;
+
+  @media screen and (max-width: 768px) {
+    padding: 60px 24px;
+  }
 `
 
 export const InfoRow = styled.div`
@@ -38,7 +43,7 @@ export const InfoRow = styled.div`
 export const Column1 = styled.div`
   margin-bottom: 15px;
   padding: 0px 15px;
-  grid-area: col1;
+  grid-area: 'col1';
 `
 
 export const Column2 = styled.div`
